@@ -1,0 +1,167 @@
+<!-- partial:index.partial.html -->
+<!-- 
+
+--READ THESE DIRECTIONS CAREFULLY!!!--
+
+This is a:
+
+--WEBSITE CHALLENGE--
+
+This is a deal for the entire class:
+
+If all students make a professional-looking website
+by the end of the course, we will have a class party. I will 
+bring cookies and you can bring what you'd like. We 
+will also set up our laptops and invite your
+parents/guardians to see your work (maybe...We might include a link to
+these in your report card).
+
+In order to earn this party, you need to follow all of
+the instructions inside the HTML, CSS, and on the pages
+themselves. The instructions in the HTML are gray letters
+between <!-- --> <!--brackets. The CSS instructions are
+between the /* */.
+
+I hope this is fun for everyone. Please take your time
+and use Google and friends/family to help you.
+
+PS: There is a bonus challenge hidden somewhere in this code.
+If you find it and figure it out, don't let anyone know. 
+I'll find it when I see your completed code at the end of the day and 
+you'll get a prize at the party.-->
+
+<!-- SOMETHING YOU SHOULD PROBABLY DO!  if you are working in visual studio code, you 
+  can install "open in browser" 
+this will allow you to open your file in your browser super quick by clicking "alt+b" 
+**BOOM**
+your site is in your browser! (but not live online yet)
+
+still, pretty neat.--> 
+
+<!-- This is the location of the header button icons. I
+got it from the Font Awesome website.
+I'm not sure if it will work with your macbooks.-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- FONT AREA (for step 9) 
+These are all of the fonts I used on this page.
+Eventually, you will have to erase them all and replace
+with your own. These can be found by 
+googling 'Google Fonts' Then just grab the location for them and replace-->
+<link href="https://fonts.googleapis.com/css?family=Bahiana" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky" rel="stylesheet">
+
+
+<div id="fixedheader">  
+ <div class="headerButtons">
+   <br>
+   
+   <!--START HERE-->
+   
+   <!--1) Put your own name here-->
+   <h1>Mr. Lilholt</h1>
+   
+   <!--2) Change the header buttons here: add your own GitHub and freecodecamp pages. Remove the linkedin button-->
+    <button class="button" onClick="window.open('https://www.freecodecamp.com/')"/><i class="fa fa-free-code-camp" style="font-size:24px"></i></button>
+  <button class="button" onClick="window.open('https://https://github.com/alilholt')"><i class="fa fa-github" style="font-size:24px"/></i></button>
+  <button class="button"/><i class="fa fa-linkedin" style="font-size:24px"></i></button>
+    </div>
+</div>
+
+<!-- TAB COLORS. 
+  These are the tabs. Change the color here ( after the 'this' ) when you get to step #13 - 16.-->
+<button class="tablink" onclick="openPage('Home', this, 'red')" >Home</button>
+<button class="tablink" onclick="openPage('Portfolio', this, 'green')" id="defaultOpen">Portfolio</button>
+<button class="tablink" onclick="openPage('DemoReel', this, 'blue')">Demo Reel</button>
+<button class="tablink" onclick="openPage('Contact', this, 'orange')">Contact</button>
+
+
+<!--3) This is the content of the Home page. You should
+follow the instructions on the page-->
+<div id="Home" class="tabcontent">
+  <h3>This is your homepage!<br>
+    Change this title to something descriptive!</h3>
+  <p><br>
+    *Write one paragraph about yourself.<br>
+    *Answer the questions:<br> 
+    How long have you been coding?<br>
+    What is one thing you'd like to change about the world?<br>
+    What would you like to be when you grow up?<br><br>
+    *Change the font if you'd like, as you'll <br>
+    have to anyways for step #9-#11.<br><br>
+    *Also, you'll need to remove this picture<br>
+    and replace it with a picture of something<br>
+    that describes you.
+  </p>
+  <img style="height:200px"src="https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FzuAQwEQzsQs%2Fmaxresdefault.jpg&f=1"> 
+</div>
+<!-- By the way: You may have noticed a src folder and a dist folder in the explorer in vs code
+  src/ stands for source, and is the raw code before minification or concatenation or 
+  some other compilation - used to read/edit the code.
+dist/ stands for distribution, and is the minified/concatenated version - actually used on production sites.-->
+<!-- 4) This is the Portfolio tab. Follow the instructions on the Porfolio tab--> 
+
+<div id="Portfolio" class="tabcontent">
+  <h3>This is your portfolio!<br> Change these words to something descriptive!</h3>
+  <p>Your portfolio is your most important page.<br>
+    It needs to show-off your work and be well-organized.<br>
+    *Write a few sentences about your computer/art experience.<br>
+    Include your HTML and CSS experience, as well as any other<br>
+    technical skill you possess. Do you have any certifications<br>
+    from freeCodeCamp? Are you experienced with the laser cutter?<br>
+    Think outside the box as you write.<br><br>
+    *After you list your experience, include 4 screenshots of your <br> 
+    best work (Jackie Robinson pages, Chronicles of Narnia, etc). <br>
+    You can also embed Codepen apps to show any games or apps.<br>
+    If you've made any videos or scratch projects, post them here.<br>
+    This Portfolio page needs to look clean and professional,<br>
+    so take your time, and feel free to make it your own.<br>
+    You will probably need to upload your screenshots to <br>
+    github.
+    
+  </p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/zWbKI0PH5ig" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<!-- 5) This is the Demo Reel tab. Follow the instructions on the Demo Reel tab--> 
+<div id="DemoReel" class="tabcontent">
+  <h3>Demo Reel</h3>
+  <p>This is an extra tab. If you have any drawings<br>
+    or animations that didn't make it to your Portfolio,<br>
+    or even Toondoos, StoryJumper books, or<br> 
+    Slides presentations that you are proud of,<br>
+    post them here. If you want to change the name of this<br>
+    tab to something else, please do it. You can choose to<br>
+    do what you'd like with this tab.
+  </p>
+  
+  <!-- This is what embedding a codepen project looks like.
+In this case, I'm displaying a calculator-->
+<p data-height="426" data-theme-id="0" data-slug-hash="NwOyzr" data-default-tab="result" data-user="tkrand" data-embed-version="2" data-pen-title="Javascript Calculator" class="codepen">See the Pen <a href="https://codepen.io/tkrand/pen/NwOyzr/">Javascript Calculator</a> by Tallen Rand (<a href="https://codepen.io/tkrand">@tkrand</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+</div>
+
+<!-- 6) This is the Portfolio tab. Follow the instructions on the Porfolio tab--> 
+<div id="Contact" class="tabcontent">
+  <h3>Contact</h3>
+  <p>Leave this page completely blank. Erase<br>
+    all of this text. I left this here because<br>
+    if you are ever making <br>a website for a family 
+    business or something similar,<br>
+    contact information should be included. 
+    <br>However, you don't need to include it for school 
+    projects like this.<br>
+  </p>
+</div>
+
+<!-- Good work! Now continue on to the CSS! -->
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

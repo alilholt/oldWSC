@@ -1,0 +1,168 @@
+
+/*
+
+7) This is the body of the page. Unless you are on a macbook pro you may
+have a small screen (like mine), so you should change the size of the 
+max-width to somewhere between 800px-960px */
+
+/* BTW the "/*" indicates a comment in css */
+
+body, html {
+    height: 100%;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: Arial;
+}
+
+/* 8) This is your header. You need to make your own image
+to use as a header. You can use https://gravit.io or anything
+similar. You will need to upload your file to your GitHub
+and copy the image address into the url address space below.
+If you can't make one, have someone help you or use one from
+their github. Adjust the height to fit your image. */
+
+#fixedheader {
+  position: relative;
+  background-image: url("https://thimbleprojects.org/tatidit/117434/computerscienceheader.jpg");
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 170px;
+  padding: 0px;
+  font-size: 20px;
+  text-align: center;
+  z-index: 30;
+  border-bottom: 2px solid #424242;
+  opacity: 0.8;
+}
+
+/* 9) This is your h1. Import your own font from Google Fonts.
+Copy and paste the HTML link into the font area of the HTML
+document.
+Copy and paste the CSS code into the font-family below. Change the
+size and color of the font. Erase or adjust the text-shadow to see what 
+happens */
+h1 {
+  font-family: 'Zilla Slab Highlight', cursive;
+  font-size: 72px;
+  margin-top: -8px;
+  margin-bottom: 8px;
+  color: black;
+  text-shadow: 0 0 .1em white, 0 0 .1em white, 0 0 .1em white;
+}
+
+/* 10) Change the font-famly and font-size */
+h3 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 32px;
+}
+
+/* 11) Change the font-famly and font-size */
+p {
+  font-family: 'Fontdiner Swanky', cursive;
+  font-size: 20px;
+}
+
+#class {
+  margin: auto 0;
+  text-align: center;
+}
+
+/* .button, .button:hover, and .button:active show
+what happens when a button is not selected, when the 
+mouse hovers over it, and when it is clicked. These
+particular buttons are located in the header. Change
+them if you want, but it isn't necessary'*/
+.button {
+  width: 50px;
+  height: 40px;
+  border-radius: 20px;
+  margin-top: 0px;
+  margin-left: 2px;
+  margin-right: 2px;
+  outline: none;
+  border: 1.5pt solid black;
+  background-color: white;
+  box-shadow: -4px 4px 8px white;
+}
+.button:hover {
+  width: 50px;
+  height: 40px;
+  border-radius: 20px;
+  margin-left: 2px;
+  margin-right: 2px;
+  outline: none;
+  border: 1.5pt solid black;
+  background-color: gray;
+  box-shadow: -4px 4px 8px white;
+}
+.button:active {
+  width: 50px;
+  height: 40px;
+  border-radius: 20px;
+  margin-left: 2px;
+  margin-right: 2px;
+  outline: none;
+  border: 1.5pt solid black;
+  background-color: green;
+  box-shadow: -4px 4px 8px white;
+}
+
+/* 12) Change
+the font-family of the tabs.*/
+.tablink {
+    background-color: #555;
+    font-family: 'Special Elite', cursive;
+    color: white;
+    font-size: 40dp;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+/* 13) Change the height to fit all of your content */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: auto;
+}
+
+/* 14) Change the background-color of the Home page. You will
+also need the go the the TAB COLORS area in the HTML and change
+the color their as well. If you don't want to center everything,
+set text-align to 'left' or 'right''*/
+#Home {
+  background-color: red;
+  text-align: center;
+  }
+/* 15) Change the background-color of the Portfolio page like 
+you did in step #13. */
+#Portfolio {
+  background-color: green;
+  text-align: center;
+  }
+
+/* 16) Change the background-color of the Portfolio page like 
+you did in step #14. Align the text*/
+#DemoReel {
+  background-color: blue;
+  }
+/* 17) Erase everything on this the Contact page. Never
+put your personal information on the internet!. */
+#Contact {
+  background-color: orange;
+}
+
+/* Congratulations! If you have completed all 17 steps, 
+you are done with your website. Let me know so I can 
+check it out.*/
